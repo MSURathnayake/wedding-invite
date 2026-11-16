@@ -1,0 +1,209 @@
+/* Tamil template: velvet dark red with gold. It uses the Kandyan layout and ornaments (kandyan.css);
+   this file only changes the colours. Imported after kandyan.css, so these values win. */
+[data-template='tamil'] {
+  --bg: #2a0a11;
+  --bg-alt: #1f070d;
+  --card: #3a1119;
+  --ink: #f7ead0;
+  --muted: #d8bf9f;
+  --accent: #d4af5a;
+  --accent-dark: #e8c978;
+  --accent-darker: #f0d792;
+  --accent-light: #f0d792;
+  --line: rgba(212, 175, 90, 0.5);
+  --petal: #8e2a3a;
+  --dark: #1a050a;
+  --silver: #e8c978;
+  --silver-light: #f0d9a6;
+  color-scheme: dark;
+}
+[data-template='tamil'] body {
+  background: var(--bg);
+  color: var(--ink);
+}
+[data-template='tamil'] .section {
+  background: var(--bg);
+}
+[data-template='tamil'] .section--alt {
+  background: var(--bg-alt);
+}
+[data-template='tamil'] .hero:not(.hero--art) {
+  background: radial-gradient(ellipse at 50% 0%, #4a1520 0%, var(--bg) 60%, #1f070d 100%);
+}
+[data-template='tamil'] .hero:not(.hero--art) .hero__content {
+  background: rgba(58, 17, 25, 0.75);
+  box-shadow: 0 0 0 7px rgba(58, 17, 25, 0.75), 0 0 0 8px var(--accent);
+}
+[data-template='tamil'] .hero__names,
+[data-template='tamil'] .section__title {
+  color: #f6dc9a;
+}
+
+/* Cards, forms, fields */
+[data-template='tamil'] .info-card,
+[data-template='tamil'] .form,
+[data-template='tamil'] .upload,
+[data-template='tamil'] .wish,
+[data-template='tamil'] .stepper,
+[data-template='tamil'] .choice__opt {
+  background: var(--card);
+  color: var(--ink);
+}
+[data-template='tamil'] .form,
+[data-template='tamil'] .upload {
+  box-shadow: 0 0 0 6px var(--bg), 0 0 0 7px var(--line);
+}
+[data-template='tamil'] .map {
+  box-shadow: 0 0 0 5px var(--bg), 0 0 0 6px var(--line);
+}
+[data-template='tamil'] .choice__opt.is-on {
+  background: #5a1a26;
+  border-color: var(--accent);
+}
+[data-template='tamil'] .field input,
+[data-template='tamil'] .field textarea,
+[data-template='tamil'] .field select {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+}
+[data-template='tamil'] ::placeholder {
+  color: rgba(247, 234, 208, 0.5);
+}
+[data-template='tamil'] .tl__dot {
+  background: var(--card);
+}
+[data-template='tamil'] .masonry__item,
+[data-template='tamil'] .moments__item {
+  border-color: #3a1119;
+  box-shadow: 0 0 0 1px var(--accent), 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons: dark text on gold */
+[data-template='tamil'] .btn {
+  color: #2a0a11;
+}
+[data-template='tamil'] .btn--ghost {
+  color: var(--accent-dark);
+}
+[data-template='tamil'] .btn--ghost:hover:not(:disabled) {
+  background: rgba(212, 175, 90, 0.16);
+}
+[data-template='tamil'] .btn--wa {
+  color: #fff;
+}
+
+/* Language toggle, music button, bottom bar */
+[data-template='tamil'] .lang__toggle,
+[data-template='tamil'] .nav,
+[data-template='tamil'] .lang select {
+  background: rgba(42, 10, 17, 0.92);
+  border-color: var(--accent);
+  color: var(--ink);
+}
+[data-template='tamil'] .lang__toggle button {
+  color: var(--ink);
+}
+[data-template='tamil'] .lang__toggle button[aria-pressed='true'] {
+  background: var(--accent);
+  color: #2a0a11;
+}
+[data-template='tamil'] .music {
+  background: rgba(42, 10, 17, 0.92);
+  color: var(--accent-dark);
+}
+[data-template='tamil'] .music.is-on {
+  background: var(--accent);
+  color: #2a0a11;
+}
+
+/* Countdown */
+[data-template='tamil'] .cd__tile {
+  box-shadow: inset 0 0 0 4px #2a0a11, inset 0 0 0 5px rgba(232, 201, 120, 0.5);
+}
+
+/* Footer */
+[data-template='tamil'] .footer {
+  background: var(--dark);
+}
+
+/* Cover: the picture fills the screen, "Tap" button in gold */
+[data-template='tamil'] .intro--cover {
+  background: #2a0a11;
+}
+[data-template='tamil'] .cover {
+  justify-content: flex-end;
+  padding-bottom: 64px;
+  color: #f6dc9a;
+  background:
+    linear-gradient(rgba(26, 5, 10, 0.25) 0%, rgba(26, 5, 10, 0.1) 35%, rgba(26, 5, 10, 0.92) 100%),
+    var(--art) center top / cover no-repeat,
+    #2a0a11;
+}
+[data-template='tamil'] .cover__mandala {
+  display: none;
+}
+[data-template='tamil'] .cover__body {
+  margin-top: 0;
+  gap: 10px;
+}
+[data-template='tamil'] .cover__eyebrow {
+  position: absolute;
+  top: -62vh;
+  color: #f0d792;
+}
+[data-template='tamil'] .cover__names {
+  color: #f6dc9a;
+  font-style: italic;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+[data-template='tamil'] .cover__date {
+  color: #f7ead0;
+  font-style: italic;
+}
+[data-template='tamil'] .cover__dear {
+  order: -1;
+  margin: 0;
+  gap: 0;
+}
+[data-template='tamil'] .cover__dear > span {
+  display: none;
+}
+[data-template='tamil'] .cover__dear strong {
+  font-weight: 400;
+  font-style: italic;
+  color: #f7ead0;
+}
+[data-template='tamil'] .cover__divider {
+  display: none;
+}
+[data-template='tamil'] .cover__open {
+  border: 1px solid #f0d792;
+  background: linear-gradient(135deg, #e3c071, #a67c27);
+  color: #2a0a11;
+  font-weight: 600;
+}
+[data-template='tamil'] .cover__open:hover {
+  background: linear-gradient(135deg, #f0d792, #b88b2e);
+  color: #2a0a11;
+}
+[data-template='tamil'] .cover__band {
+  color: #d4af5a;
+  bottom: 18px;
+}
+
+/* Invitation card (PDF / image): cream paper, deep red names */
+[data-template='tamil'] .card {
+  background: #fffaf0;
+  color: #3b2a22;
+}
+[data-template='tamil'] .card__names {
+  color: #6b1a28;
+}
+
+/* Notes and the preview-mode box */
+[data-template='tamil'] .note--demo {
+  background: rgba(212, 175, 90, 0.12);
+  border-color: var(--accent);
+  color: var(--ink);
+}

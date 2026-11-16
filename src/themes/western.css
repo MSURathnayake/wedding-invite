@@ -1,0 +1,34 @@
+/* Western Sri Lankan template: ivory, champagne gold and blush.
+   Another template = another file like this one with different values.
+   The values below are also the defaults every template starts from. */
+:root,
+[data-template='western'] {
+  --bg: #fbf8f3;
+  --bg-alt: #f4ede2;
+  --card: #fffdf9;
+  --ink: #3b3430;
+  --muted: #6f645b;
+  --accent: #b08d57;
+  --accent-dark: #8a6a3a;
+  --accent-darker: #745628;
+  --accent-light: #e3c58b;
+  --line: rgba(176, 141, 87, 0.35);
+  --petal: #f0cfc8;
+  --dark: #2b2623;
+
+  --font-script: 'Great Vibes', cursive;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Jost', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* opening envelope */
+  --intro-bg: radial-gradient(ellipse at 50% 40%, #3a312c, #1d1815);
+  --env-back: #d8c3a0;
+  --env-front-a: #e6d4b3;
+  --env-front-b: #cdb48a;
+  --env-flap-a: #ead9b9;
+  --env-flap-b: #d3bb92;
+  --seal-a: #d9b56b;
+  --seal-b: #94702f;
+  --intro-hint: #eadcc2;
+}
